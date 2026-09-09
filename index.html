@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Mad Dog Barbearia | Barbearia no Centro de Florianópolis</title>
+  <meta name="description" content="Barbearia Mad Dog no Centro de Florianópolis. Corte fade, barba com toalha quente, sem agendamento obrigatório e equipe bilíngue. Venha conferir!">
+  <link rel="canonical" href="https://maddogbarbearia.vercel.app/">
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://maddogbarbearia.vercel.app/">
+  <meta property="og:title" content="Mad Dog Barbearia | Barbearia no Centro de Florianópolis">
+  <meta property="og:description" content="Barbearia Mad Dog no Centro de Florianópolis. Corte fade, barba com toalha quente, sem agendamento obrigatório e equipe bilíngue. Venha conferir!">
+  <meta property="og:image" content="https://maddogbarbearia.vercel.app/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://maddogbarbearia.vercel.app/">
+  <meta name="twitter:title" content="Mad Dog Barbearia | Barbearia no Centro de Florianópolis">
+  <meta name="twitter:description" content="Barbearia Mad Dog no Centro de Florianópolis. Corte fade, barba com toalha quente, sem agendamento obrigatório e equipe bilíngue. Venha conferir!">
+  <meta name="twitter:image" content="https://maddogbarbearia.vercel.app/og-image.jpg">
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Compiled Tailwind CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org LocalBusiness / BarberShop JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "Mad Dog Barbearia",
+    "alternateName": "Mad Dog Barber Shop",
+    "image": "https://maddogbarbearia.vercel.app/og-image.jpg",
+    "logo": "https://maddogbarbearia.vercel.app/logo.png",
+    "@id": "https://maddogbarbearia.vercel.app/#barbershop",
+    "url": "https://maddogbarbearia.vercel.app/",
+    "telephone": "+5548988262680",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Florianópolis",
+      "addressRegion": "SC",
+      "addressCountry": "BR",
+      "neighborhood": "Centro"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -27.5969,
+      "longitude": -48.5495
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/maddogbarbearia/"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-[#0A0A0A] text-[#E4E4E7] antialiased selection:bg-white selection:text-black">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-[#050505] border-b border-white/10 text-xs py-2 px-4 tracking-widest text-center text-zinc-400 uppercase font-medium">
+    <div class="max-w-7xl mx-auto flex items-center justify-center space-x-3 sm:space-x-6 overflow-hidden text-[11px] sm:text-xs">
+      <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> CENTRO • FLORIANÓPOLIS/SC</span>
+      <span class="text-white/20">•</span>
+      <span class="font-semibold text-white">ATENDIMENTO POR ORDEM DE CHEGADA</span>
+      <span class="text-white/20 hidden md:inline">•</span>
+      <span class="hidden md:inline">WE SPEAK 🇬🇧 🇮🇹 🇪🇸 🇧🇷</span>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 bg-[#0A0A0A]/95 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo Oficial -->
+      <a href="#inicio" class="flex items-center gap-3.5 group">
+        <div class="relative w-12 h-12 rounded-full overflow-hidden border border-white/20 group-hover:border-white transition-colors duration-300">
+          <img src="logo.png" alt="Logo Oficial Mad Dog Barber Shop" class="w-full h-full object-cover">
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-lg font-bold text-white tracking-widest leading-none group-hover:text-zinc-200 transition-colors">MAD DOG</span>
+          <span class="text-[10px] tracking-[0.25em] text-zinc-400 font-sans mt-0.5">BARBER SHOP</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8 text-xs uppercase tracking-widest font-medium text-zinc-300">
+        <a href="#inicio" class="hover:text-white transition-colors py-1">Início</a>
+        <a href="#servicos" class="hover:text-white transition-colors py-1">Serviços</a>
+        <a href="#diferenciais" class="hover:text-white transition-colors py-1">Diferenciais</a>
+        <a href="#espaco" class="hover:text-white transition-colors py-1">O Espaço</a>
+        <a href="#localizacao" class="hover:text-white transition-colors py-1">Localização</a>
+        <a href="#faq" class="hover:text-white transition-colors py-1">FAQ</a>
+      </nav>
+
+      <!-- Header CTA Button -->
+      <div class="hidden sm:flex items-center gap-4">
+        <a href="https://wa.me/5548988262680?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20e%20agendar%20um%20hor%C3%A1rio%20na%20Mad%20Dog!" target="_blank" rel="noopener noreferrer" class="btn-solid-white px-5 py-2.5 rounded-none text-xs uppercase tracking-widest font-semibold flex items-center gap-2">
+          <span>Agendar Horário</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobile-menu-btn" type="button" aria-label="Abrir Menu de Navegação" class="md:hidden p-2 text-zinc-300 hover:text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-backdrop" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden transition-opacity"></div>
+  <div id="mobile-drawer" class="fixed inset-y-0 right-0 max-w-xs w-full bg-[#0F0F0F] border-l border-white/10 z-50 p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-white/10">
+        <div class="flex items-center gap-3">
+          <img src="logo.png" alt="Mad Dog Logo" class="w-10 h-10 rounded-full border border-white/20">
+          <span class="font-serif font-bold text-white tracking-widest">MAD DOG</span>
+        </div>
+        <button id="mobile-menu-close-btn" type="button" aria-label="Fechar Menu" class="p-2 text-zinc-400 hover:text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <nav class="mt-8 flex flex-col space-y-5 text-sm uppercase tracking-widest font-medium text-zinc-300">
+        <a href="#inicio" class="mobile-nav-link hover:text-white py-1">Início</a>
+        <a href="#servicos" class="mobile-nav-link hover:text-white py-1">Serviços</a>
+        <a href="#diferenciais" class="mobile-nav-link hover:text-white py-1">Diferenciais</a>
+        <a href="#espaco" class="mobile-nav-link hover:text-white py-1">O Espaço</a>
+        <a href="#localizacao" class="mobile-nav-link hover:text-white py-1">Localização</a>
+        <a href="#faq" class="mobile-nav-link hover:text-white py-1">FAQ</a>
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-white/10 space-y-4">
+      <div class="text-xs text-zinc-400 flex flex-col gap-1">
+        <span class="text-white font-semibold">Mad Dog Barber Shop</span>
+        <span>Centro • Florianópolis / SC</span>
+        <span class="text-zinc-300 font-mono">(48) 98826-2680</span>
+      </div>
+      <a href="https://wa.me/5548988262680?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20e%20agendar%20um%20hor%C3%A1rio%20na%20Mad%20Dog!" target="_blank" rel="noopener noreferrer" class="w-full btn-solid-white py-3 rounded-none text-xs uppercase tracking-widest font-semibold flex items-center justify-center gap-2">
+        <span>Falar no WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION (Editorial Luxury B&W Split - Exact Moodboard Reference) -->
+    <section id="inicio" class="relative pt-12 pb-20 lg:pt-20 lg:pb-32 bg-[#0A0A0A] border-b border-white/10 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Coluna Esquerda: Texto Editorial e CTAs -->
+          <div class="lg:col-span-6 flex flex-col justify-center reveal-on-scroll">
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/15 text-[11px] font-mono tracking-widest text-zinc-300 uppercase mb-6 w-fit">
+              <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+              TRADIÇÃO &amp; ATITUDE • CENTRO DE FLORIANÓPOLIS
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight leading-[1.1] mb-6">
+              Modern grooming in black &amp; white
+            </h1>
+
+            <p class="text-base sm:text-lg text-zinc-400 font-light leading-relaxed mb-8 max-w-xl">
+              Refined barbering experience with precision styling and timeless interiors. Da recepção ao acabamento: cortes degradê de alta definição, toalha quente relaxante e a verdadeira navalha clássica no Centro de Florianópolis.
+            </p>
+
+            <!-- Botões de Ação -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-10">
+              <a href="https://wa.me/5548988262680?text=Ol%C3%A1%2C%20quero%20agendar%20um%20corte%20ou%20barba%20na%20Mad%20Dog!" target="_blank" rel="noopener noreferrer" class="btn-solid-white px-8 py-4 text-xs uppercase tracking-widest text-center">
+                Book Appointment
+              </a>
+              <a href="#espaco" class="btn-outline-white px-8 py-4 text-xs uppercase tracking-widest text-center">
+                Explore Studio
+              </a>
+            </div>
+
+            <!-- Selos Rápidos de Confiança -->
+            <div class="pt-8 border-t border-white/10 grid grid-cols-3 gap-4 text-zinc-400">
+              <div>
+                <div class="text-lg font-serif font-bold text-white">Sem Fila</div>
+                <div class="text-[11px] uppercase tracking-wider text-zinc-500 mt-0.5">Ordem de Chegada</div>
+              </div>
+              <div>
+                <div class="text-lg font-serif font-bold text-white">4 Idiomas</div>
+                <div class="text-[11px] uppercase tracking-wider text-zinc-500 mt-0.5">🇬🇧 🇮🇹 🇪🇸 🇧🇷</div>
+              </div>
+              <div>
+                <div class="text-lg font-serif font-bold text-white">5.0 ★★★★★</div>
+                <div class="text-[11px] uppercase tracking-wider text-zinc-500 mt-0.5">Avaliação Google</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna Direita: Imagem Principal Editorial com Logo Oficial Injetada via CSS -->
+          <div class="lg:col-span-6 relative reveal-on-scroll">
+            <div class="relative bg-zinc-900 border border-white/20 p-2 sm:p-3 overflow-hidden shadow-2xl">
+              <!-- Imagem Principal B&W -->
+              <div class="relative aspect-[4/5] sm:aspect-[1/1] lg:aspect-[4/5] overflow-hidden bg-black">
+                <img src="img/hero-barber.jpg" alt="Barbeiro profissional executando corte de alta precisão na Mad Dog Barbearia" class="w-full h-full object-cover img-mono">
+                <!-- Overlay Gradiente Sutil -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 pointer-events-none"></div>
+
+                <!-- Selo da Logo Oficial Sobreposta via HTML/CSS (Diretriz AGENTS.md 3.8) -->
+                <div class="absolute top-4 right-4 bg-black/90 p-2 rounded-full border border-white/30 backdrop-blur-md shadow-2xl flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20">
+                  <img src="logo.png" alt="Emblema Mad Dog Barber Shop" class="w-full h-full object-contain rounded-full">
+                </div>
+
+                <!-- Legenda de Estilo Minimalista no Canto Inferior -->
+                <div class="absolute bottom-4 left-4 right-4 p-4 bg-black/75 backdrop-blur-sm border border-white/10">
+                  <div class="text-[10px] uppercase tracking-[0.3em] text-zinc-400">Mad Dog Barber Craft</div>
+                  <div class="font-serif text-sm font-semibold text-white mt-0.5">Precisão, Estilo e Tradição</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Faixa de Ferramentas / Grid Duplo (Inspirado Diretamente no Moodboard) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 pt-12 border-t border-white/10 reveal-on-scroll">
+          
+          <div class="relative bg-zinc-950 border border-white/10 p-6 flex items-center gap-6 group hover:border-white/30 transition-all duration-300">
+            <div class="w-24 h-24 sm:w-28 sm:h-28 flex-shrink-0 overflow-hidden bg-zinc-900 border border-white/10">
+              <img src="img/barber-tattoo-scissors.jpg" alt="Tesoura e pente de acabamento profissional na mão do barbeiro" class="w-full h-full object-cover img-mono group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div>
+              <span class="text-[10px] uppercase tracking-[0.25em] text-zinc-500 block mb-1">Artesanato da Tesoura</span>
+              <h3 class="font-serif text-lg font-semibold text-white group-hover:text-zinc-200 transition-colors">Scissor Work &amp; Navalha</h3>
+              <p class="text-xs text-zinc-400 mt-1 leading-relaxed">Cortes clássicos e modernos estruturados mecha a mecha para caimento natural e durabilidade prolongada.</p>
+            </div>
+          </div>
+
+          <div class="relative bg-zinc-950 border border-white/10 p-6 flex items-center gap-6 group hover:border-white/30 transition-all duration-300">
+            <div class="w-24 h-24 sm:w-28 sm:h-28 flex-shrink-0 overflow-hidden bg-zinc-900 border border-white/10">
+              <img src="img/service-towel.jpg" alt="Equipamentos de alta tecnologia para corte e alinhamento masculino" class="w-full h-full object-cover img-mono group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div>
+              <span class="text-[10px] uppercase tracking-[0.25em] text-zinc-500 block mb-1">Estrutura &amp; Insumos</span>
+              <h3 class="font-serif text-lg font-semibold text-white group-hover:text-zinc-200 transition-colors">Produtos de Alta Linha</h3>
+              <p class="text-xs text-zinc-400 mt-1 leading-relaxed">Pomadas com fixação sob medida, tônicos refrescantes e óleos de hidratação intensa para couro e barba.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE SERVIÇOS (Services - Alto Contraste Editorial) -->
+    <section id="servicos" class="py-24 bg-white text-[#0A0A0A] relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-zinc-300 reveal-on-scroll">
+          <div>
+            <span class="text-xs uppercase tracking-[0.3em] text-zinc-500 font-semibold block mb-2">Menu de Especialidades</span>
+            <h2 class="text-4xl sm:text-5xl font-serif font-bold text-black tracking-tight">Services</h2>
+          </div>
+          <div class="mt-4 md:mt-0">
+            <p class="text-sm text-zinc-600 max-w-md font-sans">
+              Cada serviço é executado com atenção aos mínimos detalhes. Atendimento por ordem de chegada ou horário marcado.
+            </p>
+          </div>
+        </div>
+
+        <!-- Grid de Cards de Serviços (Estilo Moodboard: Cards Escuros com Fotos P&B) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Card 1: Precision Fade -->
+          <div class="bg-[#0D0D0D] text-white p-6 border border-zinc-800 flex flex-col justify-between group hover:border-zinc-500 transition-all duration-300 reveal-on-scroll">
+            <div>
+              <div class="relative aspect-[4/5] overflow-hidden mb-6 bg-black">
+                <img src="img/service-fade.jpg" alt="Corte degradê fade de alta precisão com acabamento na lâmina" class="w-full h-full object-cover img-mono group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 left-3 bg-black/80 px-2.5 py-1 text-[10px] uppercase tracking-widest text-zinc-300 border border-white/10">
+                  Mais Procurado
+                </div>
+              </div>
+
+              <span class="text-[10px] uppercase tracking-[0.25em] text-zinc-400 block mb-1">Corte de Cabelo</span>
+              <h3 class="font-serif text-2xl font-bold text-white mb-2">Precision Fade</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed mb-6 font-light">
+                Degradê milimétrico executado com tesoura e máquina (low, mid, high ou taper fade). Transição suave de tonalidade e acabamento na navalha afiada.
+              </p>
+            </div>
+
+            <div class="pt-6 border-t border-zinc-800 flex items-center justify-between">
+              <span class="text-xs tracking-wider text-zinc-300 uppercase">Consultar &amp; Agendar</span>
+              <a href="https://wa.me/5548988262680?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20Precision%20Fade%20na%20Mad%20Dog!" target="_blank" rel="noopener noreferrer" class="btn-solid-white px-4 py-2 text-[11px] uppercase tracking-wider font-semibold">
+                Agendar
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Beard Styling & Barboterapia -->
+          <div class="bg-[#0D0D0D] text-white p-6 border border-zinc-800 flex flex-col justify-between group hover:border-zinc-500 transition-all duration-300 reveal-on-scroll">
+            <div>
+              <div class="relative aspect-[4/5] overflow-hidden mb-6 bg-black">
+                <img src="img/portrait-beard.jpg" alt="Modelagem e alinhamento de barba com produtos artesanais" class="w-full h-full object-cover img-mono group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 left-3 bg-black/80 px-2.5 py-1 text-[10px] uppercase tracking-widest text-zinc-300 border border-white/10">
+                  Alinhamento
+                </div>
+              </div>
+
+              <span class="text-[10px] uppercase tracking-[0.25em] text-zinc-400 block mb-1">Cuidados com a Barba</span>
+              <h3 class="font-serif text-2xl font-bold text-white mb-2">Beard Styling</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed mb-6 font-light">
+                Escultura, desenho de contorno simétrico e hidratação com óleos essenciais. Valorize as linhas do seu rosto com uma barba impecável.
+              </p>
+            </div>
+
+            <div class="pt-6 border-t border-zinc-800 flex items-center justify-between">
+              <span class="text-xs tracking-wider text-zinc-300 uppercase">Consultar &amp; Agendar</span>
+              <a href="https://wa.me/5548988262680?text=Ol%C3%A1%2C%20gostaria%20de%20alinhar%20minha%20barba%20na%20Mad%20Dog!" target="_blank" rel="noopener noreferrer" class="btn-solid-white px-4 py-2 text-[11px] uppercase tracking-wider font-semibold">
+                Agendar
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Hot Towel Shave -->
+          <div class="bg-[#0D0D0D] text-white p-6 border border-zinc-800 flex flex-col justify-between group hover:border-zinc-500 transition-all duration-300 reveal-on-scroll">
+            <div>
+              <div class="relative aspect-[4/5] overflow-hidden mb-6 bg-black">
+                <img src="img/tools-scissors.jpg" alt="Barbear clássico com toalha quente e lâmina tradicional" class="w-full h-full object-cover img-mono group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 left-3 bg-black/80 px-2.5 py-1 text-[10px] uppercase tracking-widest text-zinc-300 border border-white/10">
+                  Tradição Pura
+                </div>
+              </div>
+
+              <span class="text-[10px] uppercase tracking-[0.25em] text-zinc-400 block mb-1">Experiência Relaxante</span>
+              <h3 class="font-serif text-2xl font-bold text-white mb-2">Hot Towel Shave</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed mb-6 font-light">
+                O ritual clássico: toalha quente aromática para amolecer os fios e abrir os poros, espuma densa, navalha afiada e pós-barba balsâmico.
+              </p>
+            </div>
+
+            <div class="pt-6 border-t border-zinc-800 flex items-center justify-between">
+              <span class="text-xs tracking-wider text-zinc-300 uppercase">Consultar &amp; Agendar</span>
+              <a href="https://wa.me/5548988262680?text=Ol%C3%A1%2C%20quero%20fazer%20o%20Hot%20Towel%20Shave%20(toalha%20quente)%20na%20Mad%20Dog!" target="_blank" rel="noopener noreferrer" class="btn-solid-white px-4 py-2 text-[11px] uppercase tracking-wider font-semibold">
+                Agendar
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Banner Inferior de Combo Completo -->
+        <div class="mt-12 bg-black text-white p-8 sm:p-12 border border-zinc-800 flex flex-col lg:flex-row items-center justify-between gap-8 reveal-on-scroll">
+          <div class="max-w-2xl">
+            <span class="text-xs uppercase tracking-[0.25em] text-zinc-400 block mb-2">Combo Premium Completo</span>
+            <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white mb-3">Corte Completo + Barba Tradicional com Toalha Quente</h3>
+            <p class="text-sm text-zinc-300 font-light leading-relaxed">
+              Desacelere do ritmo do dia a dia no Centro de Floripa. A combinação perfeita entre alinhamento milimétrico do cabelo e relaxamento absoluto na cadeira do barbeiro.
+            </p>
+          </div>
+          <div class="flex-shrink-0">
+            <a href="https://wa.me/5548988262680?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20o%20Combo%20Completo%20(Corte%20%2B%20Barba)%20na%20Mad%20Dog!" target="_blank" rel="noopener noreferrer" class="btn-solid-white px-8 py-4 text-xs uppercase tracking-widest block text-center font-bold">
+              Agendar Combo Agora
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS / O PADRÃO MAD DOG -->
+    <section id="diferenciais" class="py-24 bg-[#0A0A0A] border-b border-white/10 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+          <span class="text-xs font-mono tracking-widest text-zinc-400 uppercase block mb-3">Por que escolher a Mad Dog</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white tracking-tight mb-4">
+            Aqui é experiência, estilo e cuidado.
+          </h2>
+          <p class="text-sm sm:text-base text-zinc-400 font-light">
+            Não somos apenas um salão comum. Criamos uma barbearia com personalidade marcante, respeito pelo ofício e praticidade real para o seu dia.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <!-- Diferencial 1: Sem agendamento obrigatório -->
+          <div class="mono-card p-8 flex flex-col justify-between reveal-on-scroll">
+            <div>
+              <div class="w-12 h-12 rounded-none bg-white/5 border border-white/20 flex items-center justify-center text-white mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-white mb-2">Ordem de Chegada</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed">
+                Sem burocracia. Se o seu dia ficou corrido, basta chegar no Centro e sentar na cadeira. Também atendemos com hora marcada via WhatsApp.
+              </p>
+            </div>
+            <span class="text-[10px] uppercase tracking-widest text-zinc-500 font-mono mt-6">Walk-in Friendly</span>
+          </div>
+
+          <!-- Diferencial 2: Speak 🇬🇧 🇮🇹 🇪🇸 🇧🇷 -->
+          <div class="mono-card p-8 flex flex-col justify-between reveal-on-scroll">
+            <div>
+              <div class="w-12 h-12 rounded-none bg-white/5 border border-white/20 flex items-center justify-center text-white mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-white mb-2">Atendimento Poliglota</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed">
+                Speak 🇬🇧 English, 🇮🇹 Italiano, 🇪🇸 Español e 🇧🇷 Português. Ideal para locais, turistas internacionais e nômades digitais em Floripa.
+              </p>
+            </div>
+            <span class="text-[10px] uppercase tracking-widest text-zinc-500 font-mono mt-6">Multilingual Service</span>
+          </div>
+
+          <!-- Diferencial 3: Toalha Quente & Barboterapia -->
+          <div class="mono-card p-8 flex flex-col justify-between reveal-on-scroll">
+            <div>
+              <div class="w-12 h-12 rounded-none bg-white/5 border border-white/20 flex items-center justify-center text-white mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-white mb-2">Barboterapia Clássica</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed">
+                Muito além do conforto: a toalha quente amolece os fios, protege a pele da lâmina e proporciona um barbear suave sem irritações.
+              </p>
+            </div>
+            <span class="text-[10px] uppercase tracking-widest text-zinc-500 font-mono mt-6">Pele Protegida</span>
+          </div>
+
+          <!-- Diferencial 4: Ambiente Rock 'n' Roll e Cerveja -->
+          <div class="mono-card p-8 flex flex-col justify-between reveal-on-scroll">
+            <div>
+              <div class="w-12 h-12 rounded-none bg-white/5 border border-white/20 flex items-center justify-center text-white mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/></svg>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-white mb-2">Clima &amp; Personalidade</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed">
+                Trilha sonora escolhida a dedo, cadeiras de barbeiro vintage, café quente, cerveja gelada e uma recepção acolhedora e autêntica.
+              </p>
+            </div>
+            <span class="text-[10px] uppercase tracking-widest text-zinc-500 font-mono mt-6">Good Vibes Only</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- O ESPAÇO / STUDIO (Showcase com Cadeiras Clássicas e Tijolo à Vista) -->
+    <section id="espaco" class="py-24 bg-[#0F0F0F] border-b border-white/10 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-7 reveal-on-scroll">
+            <div class="relative bg-zinc-900 border border-white/20 p-2 sm:p-3 shadow-2xl">
+              <div class="relative aspect-[16/10] overflow-hidden bg-black">
+                <img src="img/studio-chairs.jpg" alt="Interior da Mad Dog Barbearia com cadeiras clássicas de couro e iluminação vintage" class="w-full h-full object-cover img-mono">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div class="absolute bottom-4 left-4 bg-black/80 px-3 py-1.5 border border-white/20 text-xs font-mono tracking-widest text-white uppercase">
+                  Studio Atmosphere • Centro / SC
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 reveal-on-scroll">
+            <span class="text-xs font-mono tracking-widest text-zinc-400 uppercase block mb-3">O Espaço Mad Dog</span>
+            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white tracking-tight leading-tight mb-6">
+              Um refúgio clássico no coração de Florianópolis.
+            </h2>
+            <p class="text-sm text-zinc-300 font-light leading-relaxed mb-6">
+              Projetado para quem valoriza os bons costumes de uma barbearia de verdade. Cada detalhe do nosso espaço foi pensado para que você relaxe, tome um bom café ou cerveja e saia com o visual renovado e a autoestima lá em cima.
+            </p>
+            <p class="text-sm text-zinc-400 font-light leading-relaxed mb-8">
+              Localização privilegiada no Centro, com fácil acesso a pé ou de transporte, ideal para uma parada rápida no intervalo do trabalho ou no final de semana.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <a href="https://wa.me/5548988262680?text=Ol%C3%A1%2C%20quero%20conhecer%20a%20Mad%20Dog%20Barbearia%20no%20Centro!" target="_blank" rel="noopener noreferrer" class="btn-solid-white px-6 py-3.5 text-xs uppercase tracking-widest text-center font-semibold">
+                Venha Conhecer
+              </a>
+              <a href="#localizacao" class="btn-outline-white px-6 py-3.5 text-xs uppercase tracking-widest text-center font-semibold">
+                Ver Como Chegar
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO & GOOGLE MAPS INTERATIVO OBRIGATÓRIO (AGENTS.md 2.3) -->
+    <section id="localizacao" class="py-24 bg-[#0A0A0A] border-b border-white/10 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-16 pb-6 border-b border-white/10 reveal-on-scroll">
+          <div>
+            <span class="text-xs font-mono tracking-widest text-zinc-400 uppercase block mb-2">Onde Estamos</span>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white tracking-tight">
+              Localização &amp; Horários
+            </h2>
+          </div>
+          <div class="mt-4 lg:mt-0 text-zinc-400 text-sm font-light">
+            <span>📍 Centro — Florianópolis / SC</span>
+            <span class="mx-3 text-zinc-600">|</span>
+            <span class="text-white font-mono">(48) 98826-2680</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- Card de Informações e Horários -->
+          <div class="lg:col-span-5 bg-zinc-950 border border-white/10 p-8 flex flex-col justify-between reveal-on-scroll">
+            <div>
+              <div class="flex items-center gap-3 mb-6 pb-6 border-b border-white/10">
+                <img src="logo.png" alt="Mad Dog Barber Shop" class="w-12 h-12 rounded-full border border-white/20">
+                <div>
+                  <h3 class="font-serif text-lg font-bold text-white">Mad Dog Barbearia</h3>
+                  <p class="text-xs text-zinc-400">Mad Dog Barber Shop • Floripa</p>
+                </div>
+              </div>
+
+              <!-- Endereço -->
+              <div class="mb-6">
+                <div class="text-[11px] uppercase tracking-widest text-zinc-500 font-mono mb-1">Endereço</div>
+                <p class="text-sm text-zinc-200 font-medium leading-relaxed">
+                  Centro — Florianópolis / SC
+                </p>
+                <p class="text-xs text-zinc-400 mt-1">
+                  Atendimento por ordem de chegada ou agendamento prévio.
+                </p>
+              </div>
+
+              <!-- Horários de Funcionamento -->
+              <div class="mb-6">
+                <div class="text-[11px] uppercase tracking-widest text-zinc-500 font-mono mb-2">Horários de Atendimento</div>
+                <div class="space-y-2 text-xs text-zinc-300">
+                  <div class="flex justify-between py-1 border-b border-white/5">
+                    <span>Segunda a Sexta</span>
+                    <span class="font-mono text-white font-semibold">09:00 — 20:00</span>
+                  </div>
+                  <div class="flex justify-between py-1 border-b border-white/5">
+                    <span>Sábado</span>
+                    <span class="font-mono text-white font-semibold">09:00 — 18:00</span>
+                  </div>
+                  <div class="flex justify-between py-1">
+                    <span class="text-zinc-500">Domingo</span>
+                    <span class="font-mono text-zinc-500">Fechado</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contatos Rápidos -->
+              <div>
+                <div class="text-[11px] uppercase tracking-widest text-zinc-500 font-mono mb-1">Contato Direto</div>
+                <p class="text-sm font-mono text-white font-bold">(48) 98826-2680</p>
+                <p class="text-xs text-zinc-400 mt-0.5">Instagram: @maddogbarbearia</p>
+              </div>
+            </div>
+
+            <!-- Botões de Ação do Mapa -->
+            <div class="pt-8 mt-6 border-t border-white/10 flex flex-col sm:flex-row gap-3">
+              <a href="https://www.google.com/maps/search/?api=1&query=Centro%2C+Florian%C3%B3polis+-+SC" target="_blank" rel="noopener noreferrer" class="btn-solid-white py-3 px-5 text-center text-xs uppercase tracking-widest font-semibold flex items-center justify-center gap-2">
+                <span>Abrir no Google Maps</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+              <a href="https://wa.me/5548988262680?text=Ol%C3%A1%2C%20estou%20indo%20para%20a%20Mad%20Dog%20no%20Centro%2C%20como%20est%C3%A1%20a%20fila%20no%20momento%3F" target="_blank" rel="noopener noreferrer" class="btn-outline-white py-3 px-5 text-center text-xs uppercase tracking-widest font-semibold">
+                Consultar Fila WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Google Maps Interativo Obrigatório (iframe incorporado com loading lazy e 400px de altura) -->
+          <div class="lg:col-span-7 bg-zinc-900 border border-white/10 overflow-hidden relative min-h-[380px] lg:min-h-[420px] reveal-on-scroll">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14144.17386266856!2d-48.5583685!3d-27.5969039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952738222b40441d%3A0x1d36d8d69f061d4a!2sCentro%2C%20Florian%C3%B3polis%20-%20SC!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+              class="w-full h-full min-h-[380px] lg:min-h-[420px] border-0" 
+              style="filter: grayscale(85%) invert(92%) contrast(85%);" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade" 
+              title="Mapa de Localização da Mad Dog Barbearia no Centro de Florianópolis">
+            </iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ (Perguntas Frequentes) -->
+    <section id="faq" class="py-24 bg-[#0D0D0D] border-b border-white/10 relative">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-16 reveal-on-scroll">
+          <span class="text-xs font-mono tracking-widest text-zinc-400 uppercase block mb-3">Tire Suas Dúvidas</span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white tracking-tight mb-4">
+            Perguntas Frequentes
+          </h2>
+          <p class="text-sm text-zinc-400 font-light">
+            Tudo o que você precisa saber antes de nos visitar no Centro de Florianópolis.
+          </p>
+        </div>
+
+        <!-- Lista de Sanfona / Accordion -->
+        <div class="space-y-4">
+          
+          <!-- Pergunta 1 -->
+          <div class="border border-white/10 bg-black/50 reveal-on-scroll">
+            <button type="button" class="faq-toggle w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none">
+              <span class="font-serif text-lg font-semibold text-white">Preciso agendar horário com antecedência?</span>
+              <svg class="faq-chevron w-5 h-5 text-zinc-400 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-zinc-400 leading-relaxed border-t border-white/5 pt-4">
+              Não é obrigatório! Atendemos com muito prazer por <strong>ordem de chegada</strong> durante todo o horário de expediente. No entanto, se você tem uma agenda apertada e prefere garantir um horário exato, você também pode agendar facilmente pelo nosso WhatsApp oficial no número (48) 98826-2680.
+            </div>
+          </div>
+
+          <!-- Pergunta 2 -->
+          <div class="border border-white/10 bg-black/50 reveal-on-scroll">
+            <button type="button" class="faq-toggle w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none">
+              <span class="font-serif text-lg font-semibold text-white">Quais idiomas a equipe da barbearia fala?</span>
+              <svg class="faq-chevron w-5 h-5 text-zinc-400 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-zinc-400 leading-relaxed border-t border-white/5 pt-4">
+              We speak 🇬🇧 <strong>English</strong>, 🇮🇹 <strong>Italiano</strong>, 🇪🇸 <strong>Español</strong> e 🇧🇷 <strong>Português</strong>! Recebemos frequentemente viajantes, estrangeiros e expatriados que estão morando ou visitando Floripa e buscam um atendimento com comunicação impecável.
+            </div>
+          </div>
+
+          <!-- Pergunta 3 -->
+          <div class="border border-white/10 bg-black/50 reveal-on-scroll">
+            <button type="button" class="faq-toggle w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none">
+              <span class="font-serif text-lg font-semibold text-white">Como funciona o serviço de barba com toalha quente?</span>
+              <svg class="faq-chevron w-5 h-5 text-zinc-400 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-zinc-400 leading-relaxed border-t border-white/5 pt-4">
+              A toalha quente é aplicada no rosto antes do corte para abrir os poros e amaciar os pelos. Aplicamos produtos emolientes de alta qualidade, fazemos o barbear na navalha tradicional com lâmina descartável de uso único e finalizamos com toalha refrescante e loção calmante. O resultado é uma pele lisa, sem foliculite e com zero irritação.
+            </div>
+          </div>
+
+          <!-- Pergunta 4 -->
+          <div class="border border-white/10 bg-black/50 reveal-on-scroll">
+            <button type="button" class="faq-toggle w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none">
+              <span class="font-serif text-lg font-semibold text-white">Quais são as formas de pagamento aceitas?</span>
+              <svg class="faq-chevron w-5 h-5 text-zinc-400 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-zinc-400 leading-relaxed border-t border-white/5 pt-4">
+              Aceitamos PIX, cartões de crédito e débito de todas as principais bandeiras (Visa, Mastercard, Elo, etc.) e dinheiro em espécie.
+            </div>
+          </div>
+
+          <!-- Pergunta 5 -->
+          <div class="border border-white/10 bg-black/50 reveal-on-scroll">
+            <button type="button" class="faq-toggle w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none">
+              <span class="font-serif text-lg font-semibold text-white">A barbearia vende produtos para cuidados em casa?</span>
+              <svg class="faq-chevron w-5 h-5 text-zinc-400 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-zinc-400 leading-relaxed border-t border-white/5 pt-4">
+              Sim! Dispomos de uma linha selecionada de pomadas capilares (efeito matte e brilho), óleos nutritivos para barba, balm hidratante e shampoos específicos para você manter a finalização profissional no dia a dia.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CTA Rápido do FAQ -->
+        <div class="mt-12 text-center reveal-on-scroll">
+          <p class="text-xs uppercase tracking-widest text-zinc-400 mb-4">Ainda tem alguma dúvida específica?</p>
+          <a href="https://wa.me/5548988262680?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20a%20Mad%20Dog%20Barbearia!" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-white border-b border-white hover:text-zinc-300 hover:border-zinc-300 pb-1 transition-colors">
+            <span>Conversar diretamente no WhatsApp</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (Minimalist Black Editorial Footer - Exact Moodboard Style) -->
+  <footer class="bg-[#050505] text-white py-16 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col items-center text-center mb-12">
+        <!-- Logo Oficial no Centro -->
+        <a href="#inicio" class="inline-block mb-6 group">
+          <div class="w-20 h-20 rounded-full border border-white/20 p-1 group-hover:border-white transition-colors duration-300 mx-auto">
+            <img src="logo.png" alt="Mad Dog Barber Shop Logo Oficial" class="w-full h-full object-cover rounded-full">
+          </div>
+          <span class="font-serif text-2xl font-bold tracking-widest block text-white mt-3">MAD DOG</span>
+          <span class="text-[11px] tracking-[0.3em] text-zinc-500 uppercase block font-sans">BARBER SHOP</span>
+        </a>
+
+        <!-- Tagline -->
+        <p class="text-xs tracking-widest uppercase text-zinc-400 max-w-md font-light mb-8">
+          Modern grooming in black &amp; white • Centro, Florianópolis / SC
+        </p>
+
+        <!-- Redes Sociais com Links Reais -->
+        <div class="flex items-center space-x-6 text-zinc-400">
+          <a href="https://www.instagram.com/maddogbarbearia/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Oficial Mad Dog Barbearia" class="hover:text-white transition-colors p-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.79-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://wa.me/5548988262680" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Oficial Mad Dog Barbearia" class="hover:text-white transition-colors p-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.78.81 2.8.81 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.772-5.766zm9.969 5.766c0 5.504-4.475 9.979-9.979 9.979-1.758 0-3.411-.458-4.85-1.258l-5.171 1.357 1.38-5.044c-.9-1.492-1.359-3.21-1.359-5.034 0-5.504 4.475-9.979 9.979-9.979s9.979 4.475 9.979 9.979z"/></svg>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Centro%2C+Florian%C3%B3polis+-+SC" target="_blank" rel="noopener noreferrer" aria-label="Google Maps Mad Dog Barbearia" class="hover:text-white transition-colors p-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Linha Inferior com Copyright e Telefone -->
+      <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between text-[11px] text-zinc-500 font-mono gap-4">
+        <div>
+          &copy; 2026 Mad Dog Barber Shop. Todos os direitos reservados.
+        </div>
+        <div class="flex items-center gap-6">
+          <span>Telefone: (48) 98826-2680</span>
+          <span>•</span>
+          <span>Florianópolis / SC</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Script Externo Obrigatório (Zero inline scripts conforme AGENTS.md 1.2) -->
+  <script src="js/app.js"></script>
+</body>
+</html>
